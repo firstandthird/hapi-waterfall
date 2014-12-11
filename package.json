@@ -1,6 +1,6 @@
 {
   "name": "hapi-waterfall",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Waterfall handler for hapijs",
   "main": "index.js",
   "scripts": {
