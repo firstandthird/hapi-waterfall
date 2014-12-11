@@ -1,0 +1,38 @@
+{
+  "name": "hapi-waterfall",
+  "version": "0.0.0",
+  "description": "Waterfall handler for hapijs",
+  "main": "index.js",
+  "scripts": {
+    "test": "grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/firstandthird/hapi-waterfall.git"
+  },
+  "keywords": [
+    "waterfall",
+    "async",
+    "hapi",
+    "handler"
+  ],
+  "author": "First+Third",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/firstandthird/hapi-waterfall/issues"
+  },
+  "homepage": "https://github.com/firstandthird/hapi-waterfall",
+  "dependencies": {
+    "async": "^0.9.0",
+    "lodash-node": "^2.4.1"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-concurrent": "^1.0.0",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-nodemon": "^0.3.0",
+    "hapi": "^8.0.0",
+    "load-grunt-config": "^0.16.0"
+  }
+}

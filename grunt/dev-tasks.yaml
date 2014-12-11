@@ -1,0 +1,15 @@
+aliases:
+  - 'default'
+  - 'concurrent:dev'
+watch:
+  files:
+    - 'example/**/*'
+    - 'index.js'
+nodemon:
+  script: 'example/index.js'
+concurrent:
+  tasks:
+    - 'nodemon'
+    - 'watch'
+  options:
+    logConcurrentOutput: true
