@@ -8,12 +8,14 @@ exports.register = function(plugin, opts, next) {
   plugin.handler('waterfall', function(route, options) {
 
     return function(request, reply) {
+      var self = this;
+
       var waterfall = _.map(options, function(call) {
         if (typeof call === 'string') {
           call = helpers[call];
         }
 
-        return call;
+        return call.bind(self);
       });
 
       waterfall.unshift(function(done) {

@@ -13,12 +13,17 @@ server.register(require('../'), function(err) {
     reply(null, request, date, 'nice');
   });
 
+  server.bind({
+    test: true
+  });
+
   server.route({
     method: 'GET',
     path: '/',
     handler: {
       waterfall: [
         function(request, reply) {
+          console.log(this);
           reply(null, request, new Date());
         },
         'getWeather',
